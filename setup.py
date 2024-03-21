@@ -5,7 +5,6 @@ except ImportError:
 
 version = "1.0"
 
-
 setup(
     name="jacprotocol",
     description="Protocol lib Jaculus",
