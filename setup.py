@@ -12,7 +12,7 @@ setup(
     author="C2Coder",
     author_email="",
     url="https://github.com/c2coder/JacProtocol",
-    packages=['jacprotocol'],
+    packages=['.'],
     license="BSD",
     long_description="""\
 Protocol lib for Jaculus devices (https://jaculus.org)
