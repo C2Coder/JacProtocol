@@ -33,7 +33,7 @@ channel = 16 # mux channel - 16 is monitor/terminal
 
 # or if you want to send it over serial
 with serial.Serial(port, baud, timeout=0) as ser:
-    ser.write(jp.serialize(16))
+    ser.write(jp.serialize(channel))
 ```
 
 ## Example decode code 
