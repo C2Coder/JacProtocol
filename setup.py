@@ -7,16 +7,16 @@ version = "1.0"
 
 
 setup(
-    name="pyserial-jaculus",
-    description="Serial Lib for jaculus in Python",
-    version=version,
+    name="jacprotocol",
+    description="Protocol lib Jaculus",
+    version="1.0",
     author="C2Coder",
-    author_email="jansky.stepan08@gmail.com",
-    url="https://github.com/c2coder/pyserial-jaculus",
-    packages=['jacserial', 'jacserial.tools', 'jacserial.urlhandler', 'jacserial.threaded'],
+    author_email="",
+    url="https://github.com/c2coder/JacProtocol",
+    packages=['jacprotocol'],
     license="BSD",
     long_description="""\
-Pyserial port for jaculus
+Protocol lib for Jaculus devices (https://jaculus.org)
 """,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
