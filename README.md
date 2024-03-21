@@ -3,7 +3,7 @@
 Python implementation of the comunication protocol used in Jaculus (https://jaculus.org)
 
 ## Installing
-
+`pip install https://github.com/c2coder/JacProtocol/archive/master.zip`
 
 
 ## Example code
