@@ -14,7 +14,6 @@ class jp:
 
     buffer = ["" for i in range(OFFSET_DATA + SIZE_DATA_MAX + SIZE_CHECKSUM)]
 
-    channel = 16
     _dataSize = 0
 
     TABLE = [
@@ -318,7 +317,31 @@ class jp:
 
         jp.reset()
         return tmp_buff
+    
+    def decode(l:list) -> str|None:
+        
+        if len(l) < 5:
+            return
+        
+        size = l[1]
+        packet = list(l[0 : size + 2])
+        for _ in range(size + 2):
+            l.pop(0)
+        # get the parts of the packet
+        # delimeter = packet[0] # not needed ...
+        # size = packet[1]
+        # idk_what_is_this = packet[2]
+        channel = packet[3]
+        data = packet[4:-2]
+        # chksm_in = packet[-2:]
+        # get the checksum
+        for d in data:
+            jp.put(d)
+        test_packet = jp.serialize(channel)
+        if packet != test_packet:
+            return
 
+        return "".join([chr(d) for d in data])
 # Example code
 
 if __name__ == "__main__":
