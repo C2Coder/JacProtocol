@@ -1,0 +1,11 @@
+[project]
+name = "jacprotocol"
+version = "1.0"
+readme = "README.md"
+
+authors = [
+  {name = "C2Coder"},
+]
+maintainers = [
+  {name = "C2Coder"},
+]
